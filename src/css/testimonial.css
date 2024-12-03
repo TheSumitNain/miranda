@@ -1,0 +1,143 @@
+.test_wrapper {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    margin: 20px 0 30px 0;
+    overflow: hidden;
+}
+
+.test_cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    position: relative;
+}
+
+.test_card {
+    width: 40%;
+    height: 320px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+  linear-gradient(rgba(295, 195, 190, 0.1), rgba(295, 195, 190, 0.1)), /* Color overlay with transparency */
+  url("../assets/image/bg.jpg"); /* Background image */
+background-size: cover; /* Ensures the image covers the container */
+background-position: center; /* Centers the image */
+}
+
+.test_card_inner_div {
+    width: 100%;
+    height: 100%;
+   
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23333' stroke-width='5' stroke-dasharray='6%2c 14' stroke-dashoffset='7' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 10px;
+    padding: 26px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.test_card {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.test_card:first-child {
+  position: absolute;
+  z-index: 1;
+}
+
+.test_card:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    margin-left: 20%;
+  }
+
+  .test_card:nth-child(3) {
+    position: absolute;
+    z-index: 3;
+    margin-left: 40%;
+  }
+
+.test_card:last-child {
+    position: absolute;
+    z-index: 4;
+    margin-left: 60%;
+  }
+
+  .test_card_inner_div > p:first-child  {
+     width: 94%;
+     font-size: 24px;
+     line-height: 30px; 
+     text-decoration: underline;
+     font-family: 'Editorial light', sans-serif;
+     transform: scale(1, 1.2); 
+     margin-top: 10px;
+  }
+
+  .test_user_info_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .test_user_img_div {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 15px;
+  }
+
+  .test_user_img_div > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .test_user_detail_div > p:first-child {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Editorial bold', sans-serif;
+    transform: scale(1, 1.6); 
+  }
+
+  .test_user_detail_div > p:last-child {
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Editorial light', sans-serif;
+  }
+
+  .test_user_detail_div > p:last-child > span {
+    text-decoration: underline;
+  }
+
+  /* When hovering on the first card, move the 2nd, 3rd, and 4th cards */
+.test_card:nth-child(1):hover ~ .test_card:nth-child(2),
+.test_card:nth-child(1):hover ~ .test_card:nth-child(3),
+.test_card:nth-child(1):hover ~ .test_card:nth-child(4) {
+  transform: translateX(40%);
+}
+
+/* When hovering on the second card, move the 3rd and 4th cards */
+.test_card:nth-child(2):hover ~ .test_card:nth-child(3),
+.test_card:nth-child(2):hover ~ .test_card:nth-child(4) {
+  transform: translateX(40%);
+}
+
+/* When hovering on the third card, move the 4th card */
+.test_card:nth-child(3):hover ~ .test_card:nth-child(4) {
+  transform: translateX(40%);
+}

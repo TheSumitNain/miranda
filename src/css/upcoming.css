@@ -1,0 +1,162 @@
+.upcoming_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming_left_div {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upcoming_left_div > div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0;
+
+}
+
+.upcoming_left_vertical_line {
+    width: 2px !important;
+    background-color: #a19292;
+    height: 100%;
+}
+
+.upcoming_left_img_div {
+ width: 100%;
+ height: 600px;
+}
+
+.upcoming_left_img_div > img {
+    width: 100%;
+    height: 100%;
+}
+
+.upcoming_vertical_line {
+    width: 2px !important;
+    background-color: #a19292;
+    height: 950px;
+}
+
+.upcoming_right_div {
+    width: 30%;
+}
+
+.upcoming_right_heading_div {
+    margin: 20px 0 0 0;
+}
+
+.upcoming_right_heading_div > p:first-child {
+  font-size: 40px;
+  text-decoration: none;
+  position: relative;
+  height: 70px;
+  font-family: 'Editorial Ultrabold', sans-serif;
+  transform: scale(1, 2); 
+  margin-top: 30px;
+}
+
+.upcoming_right_heading_div > p:first-child:after {
+  position: absolute;
+  height: 1px;
+  margin: 0 auto;
+  content: "";
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: #333;
+  background-color: #333;
+  left: -10px;
+  top: 30px;
+}
+
+.upcoming_right_heading_div > p:last-child {
+    font-size: 75px;
+    text-decoration: none;
+    position: relative;
+    height: 130px;
+    font-family: 'Editorial Ultrabold', sans-serif;
+    transform: scale(1, 2.5); 
+    margin-top: 40px;
+  }
+
+  .upcoming_right_heading_div > p:last-child:after {
+    position: absolute;
+    height: 1px;
+    margin: 0 auto;
+    content: "";
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #333;
+    background-color: #333;
+    left: -10px;
+    top: 50px;
+  }
+
+.upcoming_right_para_div > p:first-child {
+    margin: 20px 0 50px 0;
+    font-family: 'Editorial New', sans-serif;
+    transform: scale(1, 1.2); 
+    font-size: 24px;
+    line-height: normal;
+}
+
+.upcoming_right_para_div > p:last-child {
+    font-family: 'Editorial New', sans-serif;
+    transform: scale(1, 1.2); 
+    font-size: 24px;
+    line-height: normal;
+    margin: 20px 0;
+}
+
+.upcoming_right_para_div > p > span {
+    font-size: 80px; /* Adjust size for desired effect */
+    line-height: normal;  /* Ensures proper alignment */
+    float: left;     /* Makes the letter "float" at the beginning */
+    margin-right: 10px; /* Adds space between the letter and the text */
+    font-weight: bold; /* Optionally bold the letter */
+    color: #fff; /* Choose your desired color */
+    background-color: black;
+    padding: 5px;
+    font-family: "Editorial italic";
+
+}
+
+.upcoming_btn_div {
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    overflow: hidden;
+}
+ 
+.upcoming_btn_div > p {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    transform: translateX(-150px);
+    transition: transform 0.8s ease; /* Smooth animation for the image size */
+    cursor: pointer;
+}
+ 
+.upcoming_btn_div > p span {
+  font-size: 40px;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.upcoming_btn_div > p:hover {
+    transform: translateX(200px);
+
+}

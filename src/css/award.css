@@ -1,0 +1,42 @@
+.award_wrapper {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.award_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.award_text_div > p:first-child {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Editorial New', sans-serif;
+    margin-top: -10px;
+}
+
+.award_text_div > p:last-child {
+    font-size: 32px;
+    line-height: normal;
+    font-family: 'Editorial Ultrabold', sans-serif;
+    transform: scale(.9, 1.8); 
+    margin-top: 10px;
+}
+
+.award_card > p {
+    font-size: 70px;
+    line-height: normal;
+    font-weight: bold;
+    font-family: 'Editorial light', sans-serif;
+    transform: scale(2, 1.7); 
+    margin: 20px 0 0 10px;
+}

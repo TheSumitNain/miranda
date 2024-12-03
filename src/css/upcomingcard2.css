@@ -1,0 +1,53 @@
+.upcoming_card2_wrapper {
+    width: 40%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 10px;
+    transition: transform 0.8s ease;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.upcoming_card2_heading {
+    color: #1D1D1B;
+   font-size: 32px;
+   /* font-weight: bold;  */
+   position: relative;
+   /* text-align: center; */
+   font-family: 'Editorial Ultrabold', sans-serif;
+   transform: scale(1, 1.6); 
+
+}
+
+
+.upcoming_card2_para {
+   color: #1D1D1B;
+   font-size: 24px;
+   line-height: 28px;
+   /* text-align: center; */
+   font-family: 'Editorial New', sans-serif;
+   transform: scale(1.2, 1.4); 
+   padding: 0 30px;
+   margin-top: 30px;
+   margin-left: -5px;
+}
+
+.upcoming_card2_footer {
+    color: #333;
+    font-size: 14px;
+    font-family: 'Editorial New', sans-serif;
+    margin-bottom: 20px;
+
+ }
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,167 @@
+.drawer_wrapper {
+} 
+
+.drawer_header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.drawer_left_para {
+    color: #1D1d1B;
+    font: 12px sans-serif;
+}
+
+.drawer_logo_div {
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drawer_right_btn {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+.drawer_right_btn > p:first-child {
+    width: 30px !important;
+    height: 3px !important;
+    background-color: white;
+    margin-bottom: 3px;
+    transform: rotate(45deg); /* Rotates the element by 45 degrees */
+    transform-origin: center;
+    position: absolute;
+
+}
+
+.drawer_right_btn > p:last-child {
+    width: 30px !important;
+    height: 3px !important;
+    background-color: white;
+    transform: rotate(135deg); /* Rotates the element by 45 degrees */
+    transform-origin: center;
+    position: absolute;
+}
+
+.drawer_right_btn p {
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .drawer_right_btn:hover p:first-child {
+    margin-left: -5px;
+  }
+
+  .drawer_right_btn:hover p:last-child {
+    margin-right: -5px;
+  }
+
+  .drawer_main_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding-top: 20px;
+  }
+
+  .drawer_inner_div {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px; /* Adjust as needed */
+    height: 100px;
+  }
+
+  .drawer_inner_div > p:first-child {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    opacity: 1; /* Initially invisible */
+    animation: reduceHeight 1s ease-in 1s forwards;
+    margin-bottom: -45px;
+  }
+
+  .drawer_inner_div > p:last-child {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    width: 100%; /* Card width */
+    height: 100px;
+    font-size: 65px;
+    line-height: normal;
+    font-family: 'Editorial Ultrabold', sans-serif;
+    transform: scale(1, 1.8); 
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+
+  /* Keyframes for height reduction */
+@keyframes reduceHeight {
+    0% {
+      height: 100%; /* Start with full height */
+    }
+    100% {
+      height: 0px; /* Reduce to zero */
+    }
+  }
+
+  .drawer_inner_div > p:last-child:hover {
+    color: rgb(191, 182, 164);
+  }
+  
+
+
+  .drawer_footer_div {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 70px;
+  }
+
+  
+.drawer_footer_div > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin-left: -70px;
+}
+
+.drawer_footer_div > ul > li {
+    text-decoration: none;
+    list-style: none;
+
+  color: #333;
+  font-family: 'Editorial bold', sans-serif;
+    transform: scale(.7, 1); 
+    font-size: 12px;
+    line-height: 1; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.drawer_footer_div > ul > p {
+    background-color: rgb(191, 182, 164);
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    margin-top: 2px;
+}
+
+.drawer_footer_div > ul > li > a {
+    text-decoration: none;
+    color: rgb(191, 182, 164);
+}

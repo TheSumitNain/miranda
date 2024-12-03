@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Editorial New';
+  src: url('./assets//fonts//Editorial\ New\ Regular\ 400.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Editorial light';
+  src: url('./assets//fonts/Editorial\ New\ Ultralight\ 200.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: 'Editorial bold';
+  src: url('./assets//fonts/Editorial\ New\ Ultrabold\ 800.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Editorial Ultrabold';
+  src: url('./assets//fonts/PPEditorialNew-Ultrabold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Editorial italic';
+  src: url('./assets//fonts/EditorialNew-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Editorial Ultraitalic';
+  src: url('./assets//fonts/EditorialNew-UltraboldItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Editorial New', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.App {
+  background: 
+  linear-gradient(rgba(295, 195, 190, 0.1), rgba(295, 195, 190, 0.1)), /* Color overlay with transparency */
+  url("../src/assets/image/bg.jpg"); /* Background image */
+background-size: cover; /* Ensures the image covers the container */
+background-position: center; /* Centers the image */
+height: 100vh; /* Adjust the height as needed */
+width: 100%; /* Adjust the width as needed */
+  overflow: hidden;
+  width: 60vw;
+  height: 100vh;
+  /* border-radius: 10px; */
+  position: absolute; /* Position the card absolutely */
+  left: 50%;
+  /* bottom: 0%; */
+  top: 500px;
+  transform: translateX(-50%) scale(0.8); /* Center horizontally and shrink slightly */
+  animation: slide-in 1.5s ease-out, rotate 1.5s ease-in-out 1 1.5s; /* Combine slide-in and rotate animations */
+  animation-fill-mode: forwards; /* Persist the final state of animations */
+}
+
+.app_header {
+  background: url("../src/assets/image/bg.jpg");
+  background: 
+  linear-gradient(rgba(295, 195, 190, 0.1), rgba(295, 195, 190, 0.1)), /* Color overlay with transparency */
+  url("../src/assets/image/bg.jpg"); /* Background image */
+background-size: cover; /* Ensures the image covers the container */
+background-position: center; /* Centers the image */
+  position: sticky; 
+  top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000;
+}
+
+/* Customize scrollbar track */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Background color of the track */
+  border-radius: 6px; /* Rounded corners */
+  background: 
+  linear-gradient(rgba(295, 195, 190, 0.1), rgba(295, 195, 190, 0.1)), /* Color overlay with transparency */
+  url("../src/assets/image/bg.jpg"); /* Background image */
+background-size: cover; /* Ensures the image covers the container */
+background-position: center; /* Centers the image */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #aca49c; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners */
+  border: 1px solid #f4f4f4; /* Padding around the thumb */
+}
+
+
+
+
+
+
+.rotating-card {
+  width: 200px;
+  height: 300px;
+  background: #3498db;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  position: absolute; /* Position the card absolutely */
+  bottom: -20%; /* Start the card off-screen */
+  left: 50%;
+  transform: translateX(-50%) scale(0.8); /* Center horizontally and shrink slightly */
+  animation: slide-in 1.5s ease-out, rotate 1.5s ease-in-out 1 1.5s; /* Combine slide-in and rotate animations */
+  animation-fill-mode: forwards; /* Persist the final state of animations */
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes slide-in {
+  0% {
+    bottom: -10%; /* Start off-screen */
+    transform: translateX(-50%) scale(0.8); /* Shrink slightly */
+  }
+  100% {
+    bottom: 100px; /* Final position in the center vertically */
+    transform: translateX(-50%) scale(1); /* Normal size */
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) rotate(360deg);
+    top: 200px;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    width: 50vw;
+  }
+  100% {
+    top: 0;
+    transform: translateX(-50%) rotate(0deg);
+    width: 100%;
+    overflow: auto;
   }
 }
+
+
+
+
+
+

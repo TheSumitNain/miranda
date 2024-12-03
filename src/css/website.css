@@ -1,0 +1,40 @@
+.website_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.website_text_div {
+    width: calc(100% - 280px);
+    background-color: black; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 300px; /* Full screen height */
+}
+
+.website_transparent_text {
+  color: transparent;
+  background: url('./../assets/image/bg.jpg') no-repeat center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  font-size: 160px;
+line-height: 1; 
+font-family: 'Editorial bold', sans-serif;
+transform: scale(1.1, 2); 
+margin-top: 60px;
+  }
+
+  .website_img_div {
+    width: 250px;
+    height: 300px;
+  }
+
+  .website_img_div > img {
+    width: 100%;
+    height: 100%;
+  }

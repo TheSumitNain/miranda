@@ -1,0 +1,23 @@
+.banner_wrapper {
+    margin: 0 25px;
+    width: calc(100% - 60px);
+    background-color: black; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Full screen height */
+}
+
+.transparent_text {
+    color: transparent;
+    background: url('./../assets/image/bg.jpg') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+  
+    font-size: 190px;
+  line-height: 1; 
+  font-family: 'Editorial Ultrabold', sans-serif;
+  transform: scale(1.1, 2); 
+  margin-top: 60px;
+  }
