@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/miranda/static/css/main.8213ff47.css",
+    "main.js": "/miranda/static/js/main.18839a3e.js",
+    "static/js/453.c5eaf93b.chunk.js": "/miranda/static/js/453.c5eaf93b.chunk.js",
+    "static/media/upcoming.jpeg": "/miranda/static/media/upcoming.a200f48473f15627ece5.jpeg",
+    "static/media/_stamp.png": "/miranda/static/media/60474834660f934090d42877_stamp.18834e79d977cc7b11b6.png",
+    "static/media/footerImg.png": "/miranda/static/media/footerImg.18834e79d977cc7b11b6.png",
+    "static/media/upcomingCardImg.webp": "/miranda/static/media/upcomingCardImg.c6b865510db9fcef6d05.webp",
+    "static/media/c11.jpeg": "/miranda/static/media/c11.d50b2e18700f1d318385.jpeg",
+    "static/media/face.jpeg": "/miranda/static/media/face.77e88712f42db37d26ca.jpeg",
+    "static/media/sideface.jpeg": "/miranda/static/media/sideface.dac277a4366d26870971.jpeg",
+    "static/media/pixelmain.jpeg": "/miranda/static/media/pixelmain.e3ad30ab63d1f550ac32.jpeg",
+    "static/media/c12.webp": "/miranda/static/media/c12.bdcc2e38cf735f662fca.webp",
+    "static/media/EditorialNew-Italic.otf": "/miranda/static/media/EditorialNew-Italic.af4cfa74e6e233f04fe4.otf",
+    "static/media/EditorialNew-UltraboldItalic.otf": "/miranda/static/media/EditorialNew-UltraboldItalic.a4f52c95d59e5eb6b9b3.otf",
+    "static/media/pixelside.jpeg": "/miranda/static/media/pixelside.1541b8a5574d8f20183b.jpeg",
+    "static/media/PPEditorialNew-Ultrabold.otf": "/miranda/static/media/PPEditorialNew-Ultrabold.fcedd45922c70286292f.otf",
+    "static/media/Editorial New Regular 400.otf": "/miranda/static/media/Editorial New Regular 400.ce986ff1d2395dcabb90.otf",
+    "static/media/Editorial New Ultrabold 800.otf": "/miranda/static/media/Editorial New Ultrabold 800.aca3a62ffd91feb3bff7.otf",
+    "static/media/bg.jpg": "/miranda/static/media/bg.f732f7aedd2c9110066c.jpg",
+    "static/media/Editorial New Ultralight 200.otf": "/miranda/static/media/Editorial New Ultralight 200.d160a384b27caa92d31a.otf",
+    "static/media/pixelprize.jpeg": "/miranda/static/media/pixelprize.aabd449aee2725372e90.jpeg",
+    "static/media/wow.webp": "/miranda/static/media/wow.58ca9593d3437fc92d31.webp",
+    "static/media/darkLogo.svg": "/miranda/static/media/darkLogo.f25f201a9eeed7f3f009794bed404778.svg",
+    "static/media/headerLogo.svg": "/miranda/static/media/headerLogo.f25f201a9eeed7f3f009794bed404778.svg",
+    "index.html": "/miranda/index.html",
+    "static/media/upcomingArrow.svg": "/miranda/static/media/upcomingArrow.5da71c3096d6f56995086b1b558d4a04.svg",
+    "main.8213ff47.css.map": "/miranda/static/css/main.8213ff47.css.map",
+    "main.18839a3e.js.map": "/miranda/static/js/main.18839a3e.js.map",
+    "453.c5eaf93b.chunk.js.map": "/miranda/static/js/453.c5eaf93b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8213ff47.css",
+    "static/js/main.18839a3e.js"
+  ]
+}
